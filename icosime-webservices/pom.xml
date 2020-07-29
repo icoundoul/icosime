@@ -10,11 +10,11 @@
   <dependencies>
   </dependencies>
   <!-- Pom parent -->
-   <parent>
+   <!--parent>
     <groupId>com.icoundoul.icosime</groupId>
     <artifactId>icosime-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-  </parent> 
+  </parent--> 
   <build>
     <finalName>icosime-webservices</finalName>
   </build>
