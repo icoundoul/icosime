@@ -1,0 +1,8 @@
+target
+.settings
+.project
+
+firestorm-model/.classpath
+firestorm-persistence/.classpath
+firestorm-service/.classpath
+.classpath
