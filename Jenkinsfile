@@ -5,11 +5,7 @@ node {
 	    git 'https://github.com/icoundoul/icosime' 
 	    }
 	    
-        stage('Clean') {
-            steps {
-                deleteDir()
-            }
-        }
+
 
 
 
