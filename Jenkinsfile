@@ -1,14 +1,14 @@
 pipeline {
-    agent { label 'slave_linux_sisn' }
 
-    parameters {
+
+    /*parameters {
         choice(choices: ['int','preprod', 'prod'], description: 'Quel environnement ?', name: 'env')
     }
 
     tools {
         maven 'maven-3.6.0'
 		jdk 'jdk-8'
-    }
+    }*/
 
     options {
         disableConcurrentBuilds()
