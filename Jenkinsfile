@@ -1,18 +1,13 @@
 node {
 	    
 	stage('Checkout') {
+	
 	    git 'https://github.com/icoundoul/icosime' 
-	    }
-	    
-
-
-
-
+	}
         stage('Build') {
-         
-                bat "mvn clean install -Plivraison deploy"
+           def mvnhome = tool name: 'maven-3.6.3', type: 'maven'
+	   bat "${mvnhome}/bin/mvn clean install -Plivraison deploy"
          }
-	   
 	    /*stage('Analyse Sonar') {
             steps {
                 withSonarQubeEnv('sonar-entreprise') {
