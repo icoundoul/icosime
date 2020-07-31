@@ -1,7 +1,6 @@
 node {
-
-    stages {
-	    stage('Checkout') {
+	    
+	stage('Checkout') {
 	    git 'https://github.com/icoundoul/icosime' 
 	    }
 	    
