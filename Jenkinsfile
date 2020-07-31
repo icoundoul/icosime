@@ -10,7 +10,7 @@ node {
 
         stage('Build') {
          
-                sh "mvn clean install -Plivraison deploy"
+                bat "mvn clean install -Plivraison deploy"
          }
 	   
 	    /*stage('Analyse Sonar') {
