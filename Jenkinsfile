@@ -1,6 +1,6 @@
 pipeline {
 
-
+agent:any
     /*parameters {
         choice(choices: ['int','preprod', 'prod'], description: 'Quel environnement ?', name: 'env')
     }
