@@ -6,7 +6,7 @@ node {
 	}
         stage('Build') {
            def mvnhome = tool name: 'maven-3.6.3', type: 'maven'
-	   sh "${mvnhome}/bin/mvn clean install -Plivraison deploy"
+	   sh "${mvnhome}/bin/mvn clean install -Plivraison"
          }
 	    /*stage('Analyse Sonar') {
             steps {
